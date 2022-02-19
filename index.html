@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 8</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <header class="header">
+            <h1 class="heading" id="heading">Псевдоклассы и Псевдоэлементы</h1>
+            <nav class="menu" id="menu">
+                <p><a href="#burger">Навигация по странице</a></p>
+                <div class="burger" id="burger">
+                    <ul class="menu-list" id="menu-list">
+                        <li><a href="#one">Псевдоклассы состояния</a></li>
+                        <li><a href="#two">Псевдоклассы положения в коде</a></li>
+                        <li><a href="#three">Псевдокласс исключения</a></li>
+                        <li><a href="#four">Псевдоэлементы</a></li>
+                    </ul>
+                    <div class="menu-button-close"><a href="#menu">Закрыть</a></div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="state">
+                <div class="property-block">
+                    <h2 class="property" id="one">Псевдоклассы состояния</h2>
+                </div>
+                <p class="definition"><span> :hover </span> - срабатывает при наведении на элемент</p>
+                <div class="button-hover">
+                    <div class="button-hover-one"></div>
+                    <div class="button-hover-two"></div>
+                    <div class="button-hover-three"></div>
+                    <div class="button-hover-four"></div>
+                </div>
+                <p class="definition"><span> :active </span> - срабатывает при нажатии на элемент</p>
+                <div class="button-active">
+                    <div class="button-active-one"></div>
+                    <div class="button-active-two"></div>
+                    <div class="button-active-three "></div>
+                </div>
+                <p class="definition"><span> :visited </span> - срабатывает для посещенных ссылок</p>
+                <div class="visited-block">
+                    <a href="https://i08.fotocdn.net/s129/71db3cbdbe8566cc/public_pin_l/2922788077.jpg"
+                        target="_blank">Ссылка на первого манула</a>
+                    <br>
+                    <a href="https://avatars.mds.yandex.net/get-zen_doc/98844/pub_5cbece0ebc785500b3b6e3cd_5cbed5ac70da470224cb8b83/scale_1200"
+                        target="_blank">Ссылка на второго манула</a>
+                    <br>
+                    <a href="https://natalyland.ru/wp-content/uploads/c/3/6/c36697a6f136f5a350acc18f4dd7ba38.jpeg"
+                        target="_blank">Ссылка на третьего манула</a>
+                </div>
+                <p class="definition"><span> :focus </span> - срабатывает при получении элементом фокуса</p>
+                <p class="definition"><span> :target </span> - срабатывает когда на элемент ссылаются</p>
+            </div>
+
+            <div class="position">
+                <div class="property-block">
+                    <h2 class="property" id="two">Псевдоклассы положения в коде</h2>
+                </div>
+                <p class="definition"><span> :first-child </span> и <span> :first-of-type </span> позволяют обратиться к
+                    первому элементу в блоке</p>
+                <div class="first">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni id eum veniam exercitationem</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni id eum veniam exercitationem</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni id eum veniam exercitationem</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni id eum veniam exercitationem</p>
+                </div>
+                <p class="definition"><span> :last-child </span> и <span> :last-of-type </span> позволяют обратиться к
+                    последнему элементу в блоке</p>
+                <div class="last">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni id eum veniam exercitationem</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni id eum veniam exercitationem</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni id eum veniam exercitationem</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni id eum veniam exercitationem</p>
+                </div>
+                <p class="definition"><span> :nth-child </span> позволяет обратиться к конкретным элементам в блоке</p>
+                <div class="nth">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni id eum veniam exercitationem</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni id eum veniam exercitationem</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni id eum veniam exercitationem</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni id eum veniam exercitationem</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni id eum veniam exercitationem</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni id eum veniam exercitationem</p>
+                </div>
+            </div>
+            <div class="exception">
+                <div class="property-block">
+                    <h2 class="property" id="three">Псевдокласс исключения</h2>
+                </div>
+                <p class="definition"><span> :not </span> позволяет создать исключение</p>
+                <div class="not">
+                    <p class="text-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni id eum veniam
+                        exercitationem</p>
+                    <p class="text-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni id eum veniam
+                        exercitationem</p>
+                    <p class="text-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni id eum veniam
+                        exercitationem</p>
+                    <p class="text-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni id eum veniam
+                        exercitationem</p>
+                    <p class="text-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni id eum veniam
+                        exercitationem</p>
+
+                </div>
+            </div>
+            <div class="elements">
+                <div class="property-block">
+                    <h2 class="property" id="four">Псевдоэлементы</h2>
+                </div>
+                <p class="definition"><span> ::first-line </span> задет стиль первой строки текста</p>
+                <p class="f-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quidem corporis ab
+                    culpa? Tenetur natus laborum odit. Voluptate esse obcaecati veritatis possimus fugit laudantium
+                    cumque adipisci corrupti, culpa earum quae.
+                    Voluptates minima deleniti qui quidem nemo, quaerat incidunt. Ratione, laudantium illo! Voluptatem,
+                    perferendis dicta doloremque voluptatum commodi velit tenetur numquam, recusandae maiores hic,
+                    impedit voluptates nostrum vel nobis. Libero, ea.</p>
+                <p class="definition"><span> ::first-letter </span> задает стиль первой букве текста</p>
+                <p class="f-letter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, maiores
+                    necessitatibus. Inventore voluptate, dicta vero consequatur debitis placeat quibusdam est minus rem
+                    iste. Quibusdam ut vel non suscipit odio tempora!</p>
+                <p class="definition"><span> ::before </span> и <span> ::after </span> позволяют добавить контент до и
+                    после объекта</p>
+                <ul class="important">
+                    <li><span>::before и ::after</span> НЕ работают без параметра content:"";</li>
+                    <li><span>::before и ::after</span> - СТРОЧНЫЕ</li>
+                </ul>
+                <ul class="before">
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+                </ul>
+                <ul class="after">
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+                </ul>
+                <div class="golf"><img src="img/golf.jpg" alt=""></div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <a href="#heading" class="up">Наверх</a>
+    </footer>
+
+
+</body>
+
+</html>

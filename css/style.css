@@ -1,0 +1,515 @@
+/* ===============ПОДКЛЮЧЕНИЯ=============== */
+
+@import "null.css";
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Taviraj&display=swap");
+
+/* ===============СКАЧЕННЫЕ ШРИФТЫ=============== */
+
+/* ===============WRAPPER=============== */
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+/* ===============INDEX=============== */
+
+.header {
+    padding: 30px 15px;
+    background-color: #229298;
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.heading {
+    font-size: 40px;
+    color: wheat;
+    text-align: center;
+    text-shadow: 0 0 2px black;
+    font-family: "Lobster", cursive;
+    margin-bottom: 30px;
+}
+
+.menu {
+    font-family: "Ubuntu Mono", monospace;
+}
+
+.menu > p {
+    text-align: center;
+    font-size: 25px;
+    color: wheat;
+    text-shadow: 0 0 2px black;
+    margin-bottom: 10px;
+}
+
+.menu > p a:hover {
+    text-decoration: underline;
+}
+
+.burger {
+    background: url("../img/bg-menu.jpg ") center / cover no-repeat;
+    border-radius: 30px;
+    box-shadow: 5px 5px 20px 5px black;
+    font-size: 20px;
+    padding: 15px;
+    display: none;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.menu-button-close {
+    text-align: right;
+}
+
+.menu-button-close:hover {
+    text-decoration: underline;
+}
+
+.menu-list li {
+    font-size: 22px;
+    color: aliceblue;
+    text-shadow: 0 0 2px #000;
+    line-height: 1.5;
+}
+
+.menu-list li::before {
+    content: "";
+    margin-right: 10px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url("../img/icons/marker.png") center / cover;
+}
+
+.menu-list li:hover::before {
+    width: 20px;
+    height: 20px;
+}
+
+.menu-list li:last-of-type {
+    margin-bottom: 20px;
+}
+
+.burger:target {
+    display: block;
+}
+
+.main {
+    background-color: #bddeca;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.172L6.172 0h5.656L0 11.828V6.172zm40 5.656L28.172 0h5.656L40 6.172v5.656zM6.172 12l12-12h3.656l12 12h-5.656L20 3.828 11.828 12H6.172zm12 0L20 10.172 21.828 12h-3.656z' fill='%2357a290' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    padding: 30px 15px;
+}
+
+.property {
+    font-size: 30px;
+    font-family: "Lobster", cursive;
+    text-align: center;
+    display: inline-block;
+}
+
+.property::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background: #000;
+    width: 50%;
+    margin: 0 0 0 auto;
+}
+
+.property-block {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.definition {
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 24px;
+    line-height: 2;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.definition span {
+    font-weight: 700;
+}
+
+.definition:hover span {
+    text-transform: uppercase;
+    font-size: 30px;
+    background: url("../img/fire.gif") bottom / cover no-repeat;
+}
+
+[class*="button-hover-"] {
+    max-width: 200px;
+    height: 200px;
+    background: chocolate;
+    margin: 0 auto 50px;
+    border-radius: 50%;
+    outline: 5px solid rgb(218, 218, 218);
+}
+
+.button-hover div:last-child {
+    margin-bottom: 100px;
+}
+
+.button-hover-one:hover {
+    background: rgb(173, 86, 23);
+    outline: 5px solid rgb(177, 177, 177);
+}
+
+.button-hover-two:hover {
+    margin: 0 0 50px auto;
+    box-shadow: -100px 0 500px 10px blueviolet;
+    background-color: blueviolet;
+}
+
+.button-hover-three:hover {
+    margin: 0 0 50px 0;
+    box-shadow: 100px 0 500px 10px crimson;
+    background-color: crimson;
+}
+
+.button-hover-four:hover {
+    outline: none;
+    background: url("../img/hover1.gif") center / cover no-repeat;
+    max-width: 300px;
+    height: 300px;
+    border-radius: 50% 50% 50% 50% / 70% 72% 28% 30%;
+}
+
+[class*="button-active-"] {
+    max-width: 300px;
+    height: 200px;
+    background: url("../img/chest.png") center / cover;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.button-active-two {
+    margin: 0 auto 50px;
+}
+
+.button-active-three {
+    margin: 0 0 50px auto;
+}
+
+.button-active div:last-of-type {
+    margin-bottom: 100px;
+}
+
+.button-active-one:active {
+    background: url("../img/figa.gif") center / cover;
+}
+
+.button-active-two:active {
+    background: url("../img/figa.gif") center / cover;
+}
+
+.button-active-three:active {
+    background: url("../img/gold.gif") center / cover;
+}
+
+.visited-block {
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 30px;
+    color: #229298;
+    line-height: 2;
+    text-shadow: 0 0 1px black;
+    margin-bottom: 100px;
+}
+
+.visited-block a:hover {
+    text-decoration: underline;
+}
+
+.visited-block a:visited {
+    color: #666;
+}
+
+.state > *:last-child {
+    margin-bottom: 150px;
+}
+
+.first {
+    font-size: 25px;
+    text-align: center;
+    line-height: 2;
+    color: rgb(172, 0, 0);
+    margin-bottom: 100px;
+}
+
+.first p:first-of-type {
+    text-transform: uppercase;
+    text-decoration: line-through;
+}
+
+.last {
+    font-size: 25px;
+    text-align: center;
+    line-height: 2;
+    color: #06429c;
+    margin-bottom: 100px;
+}
+
+.last p:last-of-type {
+    font-style: italic;
+    font-weight: 700;
+}
+
+.nth {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.nth p:nth-child(even) {
+    background-color: #eee;
+}
+
+.not {
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    color: brown;
+}
+
+.not p:not(.text-1, .text-5) {
+    text-transform: capitalize;
+    color: burlywood;
+}
+
+.exception {
+    margin-bottom: 150px;
+}
+
+.f-line {
+    text-align: center;
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+    color: darkgoldenrod;
+    margin-bottom: 100px;
+}
+
+.f-line::first-line {
+    text-transform: uppercase;
+    color: crimson;
+    font-weight: 700;
+}
+
+.f-letter {
+    text-align: center;
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+    color: darkmagenta;
+    margin-bottom: 100px;
+}
+
+.f-letter::first-letter {
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: overline;
+}
+
+.important {
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-bottom: 100px;
+}
+
+.important span {
+    background-color: darkgrey;
+    outline: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+.before {
+    font-size: 20px;
+    line-height: 1.5;
+    color: blue;
+    margin-bottom: 100px;
+}
+
+.before li::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/icons/point-list.png") center / cover;
+    margin-right: 10px;
+}
+
+.after {
+    font-size: 20px;
+    line-height: 1.5;
+    color: red;
+    margin-bottom: 100px;
+}
+
+.after li::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/icons/point-list.png") center / cover;
+    margin-left: 10px;
+}
+
+.elements ul {
+    max-width: 500px;
+    margin: 0 auto 100px;
+}
+
+.golf {
+    max-width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.golf img {
+    max-width: 600px;
+    height: 400px;
+}
+
+.golf:hover::before {
+    content: "";
+    display: block;
+    height: 20px;
+    width: 100%;
+    background: rgb(18, 190, 168);
+}
+
+.golf:hover::after {
+    content: "";
+    display: block;
+    height: 20px;
+    width: 100%;
+    background: rgb(18, 190, 168);
+}
+
+.footer {
+    padding: 30px 15px;
+    background-color: #229298;
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.up {
+    margin: 0 auto;
+    display: block;
+    width: 300px;
+    padding: 20px;
+    color: rgb(253, 253, 253);
+    background-color: rgb(59, 182, 190);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    border-radius: 30px;
+    box-shadow: 0 10px 0 0 black;
+    border: 1px solid black;
+}
+
+.up:hover {
+    background-color: rgb(45, 149, 156);
+}
+
+.up:active {
+    margin-top: 10px;
+    box-shadow: none;
+}
+
+/* ===============FIGMA=============== */
+.block-f {
+    max-width: 390px;
+    font-family: "Lato", sans-serif;
+    margin: 0 auto;
+
+    margin-bottom: 30px;
+}
+
+.name {
+    color: #1e212c;
+    font-size: 46px;
+    line-height: 1.3;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+.name span {
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.list-f {
+    color: #424551;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.list-f li {
+    margin-bottom: 12px;
+    padding-left: 32px;
+}
+
+.list-f li::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("../img/icons/marker-list-f.svg") 0 0 / cover no-repeat;
+    margin-left: -32px;
+    margin-right: 16px;
+}
+
+.list-f li:last-child {
+    margin-bottom: 48px;
+}
+
+.bottum-f {
+    display: inline-block;
+    padding: 16px 32px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #fff;
+    background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+}
+
+.block2-f {
+    font-family: "Taviraj", serif;
+    color: #333;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+}
+
+.maple {
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.maple::after {
+    content: "";
+    display: block;
+    background: #333;
+    height: 1px;
+    width: 65px;
+    margin-top: 8px;
+}
